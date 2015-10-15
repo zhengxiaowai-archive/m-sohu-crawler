@@ -19,19 +19,19 @@
 ### 保存图片
 网页中图片可以分成四类：
 
-1. 有加载动画的图片:
+#### 有加载动画的图片:
 
 ```<img src="http://s1.rr.itc.cn/p/images/imgloading.jpg" original="http://s8.rr.itc.cn/org/wapChange/201510_15_7/b5o70d8524002308451.jpg" width="146" height="124" />```
 
 这类图片标签中**src**是加载动画，需要的真正图片在**original**中，所以需要爬去的**original**中的url，然后用get请求下载图片。
 
-2. 正常的图片标签： 
+#### 正常的图片标签： 
 
 ```<img src="http://s1.rr.itc.cn/w/u/0/home_logo.png" alt="搜狐网SOHU.com" name="搜狐网SOHU.com">```
 
 这类图片只需要爬去**src**中的url，然后用get下载即可。
 
-3. 固定的图片，即不是动态加载而来的：
+#### 固定的图片，即不是动态加载而来的：
 
 网页中一共有三个固定的图片是：加载图片、左箭头、右箭头
 
